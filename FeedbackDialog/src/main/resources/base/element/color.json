@@ -1,0 +1,40 @@
+{
+  "color" : [
+    {
+      "name":"md_btn_selected_dark",
+      "value":"#808080"
+    },
+    {
+      "name":"grey",
+      "value":"#E7E7E7"
+    },
+    {
+      "name":"colorPrimary",
+      "value":"#3F51B5"
+    },
+    {
+      "name":"colorPrimaryDark",
+      "value":"#303F9F"
+    },
+    {
+      "name":"colorAccent",
+      "value":"#FF4081"
+    },
+    {
+      "name":"sampleColor",
+      "value":"#795548"
+    },
+    {
+      "name":"dialogTransparent",
+      "value":"#808080"
+    },
+    {
+      "name":"transparent",
+      "value":"#00000000"
+    },
+    {
+      "name":"primary_text_light",
+      "value":"#999999"
+    }
+  ]
+}

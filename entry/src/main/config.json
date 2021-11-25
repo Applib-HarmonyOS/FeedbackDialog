@@ -1,0 +1,46 @@
+{
+  "app": {
+    "bundleName": "design.ivisionblog.apps.reviewdialoglibrary.demo",
+    "vendor": "ivisionblog",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "design.ivisionblog.apps.reviewdialoglibrary.demo",
+    "name": ".MyApplication",
+    "mainAbility": "design.ivisionblog.apps.reviewdialoglibrary.demo.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "design.ivisionblog.apps.reviewdialoglibrary.demo.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Button
+        ohos:id="$+id:myFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Show Feedback Dialog" />
+
+</DirectionalLayout>

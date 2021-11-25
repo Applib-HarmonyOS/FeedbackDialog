@@ -1,57 +1,70 @@
-apply plugin: 'com.android.library'
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+apply plugin: 'checkstyle'
+apply plugin: "org.sonarqube"
 
-android {
-    compileSdkVersion 23
+//For instructions on signature configuration, see https://developer.harmonyos.com/en/docs/documentation/doc-guides/ide_debug_device-0000001053822404#EN-US_TOPIC_0000001154985555__section1112183053510
+ohos {
+    compileSdkVersion 5
     defaultConfig {
-        minSdkVersion 16
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        compatibleSdkVersion 5
     }
+}
 
-    defaultConfig {
-        vectorDrawables.useSupportLibrary = true
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+buildscript {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
         }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:2.4.4.2'
+        classpath 'com.huawei.ohos:decctest:1.2.4.0'
+        classpath 'com.huawei.agconnect:agcp-harmony:1.0.0.300'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3"
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        jcenter()
     }
 
+    task checkstyle(type: Checkstyle) {
+        showViolations = true
+        configFile file("config/checkstyle.xml")
+
+        source 'entry/src/main/java'
+        source 'FeedbackDialog/src/main/java'
+        include '**/*.java'
+
+        // empty classpath
+        classpath = files()
+    }
 }
 
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:23.4.0'
+checkstyle {
+    toolVersion "8.43"
 }
 
-ext {
-    bintrayRepo = 'FeedbackDialog'
-    bintrayName = 'FeedbackDialog'
-
-    publishedGroupId = 'design.ivisionblog.apps'
-    libraryName = 'FeedbackDialog'
-    artifact = 'FeedbackDialog'
-
-    libraryDescription = 'An Interactive Feedback Dialog for Android inspired from Google Maps Review section'
-
-    siteUrl = 'https://github.com/shivasurya/FeedbackDialog'
-    gitUrl = 'https://github.com/shivasurya/FeedbackDialog.git'
-
-    libraryVersion = '0.0.1-alpha'
-
-    developerId = 'shivasurya'
-    developerName = 's shivasurya'
-    developerEmail = 's.shivasurya@gmail.com'
-
-    licenseName = 'MIT'
-    licenseUrl = 'https://github.com/shivasurya/FeedbackDialog/blob/master/LICENSE'
-    allLicenses = ["MIT"]
+sonarqube {
+    properties {
+        property "sonar.projectKey", "applibgroup_FeedbackDialog"
+        property "sonar.organization", "applibgroup"
+        property "sonar.host.url", "https://sonarcloud.io/"
+        property "sonar.java.checkstyle.reportPaths", "checkstyle.xml"
+        property "sonar.sources", "entry/src, FeedbackDialog/src"
+        property "sonar.java.binaries", "entry/build"
+        property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/checkstyle.xml"
+    }
 }
-
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

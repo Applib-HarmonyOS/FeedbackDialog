@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "brand_name",
+      "value": "World Travels"
+    },
+    {
+      "name": "brand_description",
+      "value": "Madurai - Chennai Travels"
+    },
+    {
+      "name": "customer_review_questions",
+      "value": "How comfortable your travel was ?"
+    },
+    {
+      "name": "positive_feedback_text",
+      "value": "AWESOME"
+    },
+    {
+      "name": "negative_feedback_text",
+      "value": "BAD"
+    },
+    {
+      "name": "ambiguity_feedback_text",
+      "value": "HELP"
+    }
+  ]
+}

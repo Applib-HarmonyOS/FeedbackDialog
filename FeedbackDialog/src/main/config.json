@@ -1,0 +1,23 @@
+{
+  "app": {
+    "bundleName": "design.ivisionblog.apps.reviewdialoglibrary.demo",
+    "vendor": "ivisionblog",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "design.ivisionblog.apps.reviewdialoglibrary",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "FeedbackDialog",
+      "moduleType": "har"
+    }
+  }
+}
