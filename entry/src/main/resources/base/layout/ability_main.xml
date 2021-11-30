@@ -6,11 +6,35 @@
     ohos:orientation="vertical">
 
     <Button
-        ohos:id="$+id:myFeedBackButton"
+        ohos:id="$+id:travelFeedBackButton"
         ohos:width="200vp"
         ohos:top_margin="50vp"
         ohos:layout_alignment="center"
         ohos:height="50vp"
-        ohos:text="Show Feedback Dialog" />
+        ohos:text="Travel Feedback Dialog" />
+
+    <Button
+        ohos:id="$+id:hotelFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Hotel Feedback Dialog" />
+
+    <Button
+        ohos:id="$+id:softwareFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Software Feedback Dialog" />
+
+    <Button
+        ohos:id="$+id:appFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Application Feedback Dialog" />
 
 </DirectionalLayout>

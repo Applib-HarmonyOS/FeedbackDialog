@@ -13,7 +13,8 @@
     "name": ".MyApplication",
     "mainAbility": "design.ivisionblog.apps.reviewdialoglibrary.demo.MainAbility",
     "deviceType": [
-      "phone"
+      "phone",
+      "tablet"
     ],
     "distro": {
       "deliveryWithInstall": true,

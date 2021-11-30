@@ -13,13 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package design.ivisionblog.apps.reviewdialoglibrary.demo;
+package design.ivisionblog.apps.reviewdialoglibrary.annotation;
 
-import ohos.aafwk.ability.AbilityPackage;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-public class MyApplication extends AbilityPackage {
-    @Override
-    public void onInitialize() {
-        super.onInitialize();
-    }
+@Documented
+@Retention(RetentionPolicy.CLASS)
+@Target({ElementType.METHOD, ElementType.PARAMETER, ElementType.FIELD, ElementType.LOCAL_VARIABLE})
+public @interface StringRes {
 }
+

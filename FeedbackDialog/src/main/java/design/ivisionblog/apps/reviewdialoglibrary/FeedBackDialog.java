@@ -1,5 +1,8 @@
 package design.ivisionblog.apps.reviewdialoglibrary;
 
+import design.ivisionblog.apps.reviewdialoglibrary.annotation.ColorRes;
+import design.ivisionblog.apps.reviewdialoglibrary.annotation.DrawableRes;
+import design.ivisionblog.apps.reviewdialoglibrary.annotation.StringRes;
 import design.ivisionblog.apps.reviewdialoglibrary.utils.LogUtil;
 
 import ohos.agp.render.Texture;
@@ -38,37 +41,71 @@ import java.io.IOException;
 
 public class FeedBackDialog {
     private static final String TAG = "FeedbackDialog";
+
     private Context mContext;
+
+    @DrawableRes
     private int mIcon;
+
+    @ColorRes
     private int mIconColor;
+
+    @StringRes
     private int mTitle;
+
+    @DrawableRes
     private int mBackgroundColor;
+
+    @StringRes
     private int mDescription;
+
+    @StringRes
     private int mReviewQuestion;
+
     private Image titleImageView;
+
     private Text titleTextView;
     private Text descriptionTextView;
     private Text reviewQuestionTextView;
+
     private DirectionalLayout positiveFeedbackLayout;
     private DirectionalLayout negativeFeedbackLayout;
     private DirectionalLayout ambiguityFeedbackLayout;
     private DirectionalLayout feedbackBodyLayout;
+
     private Text positiveFeedbackTextView;
     private Text negativeFeedbackTextView;
     private Text ambiguityFeedbackTextView;
-    private int mPositiveFeedbackText;
-    private int mPositiveFeedbackIcon;
-    private int mNegativeFeedbackText;
-    private int mNegativeFeedbackIcon;
-    private int mAmbiguityFeedbackText;
-    private int mAmbiguityFeedbackIcon;
+
     private Image positiveFeedbackIconView;
     private Image negativeFeedbackIconView;
     private Image ambiguityFeedbackIconView;
+
+    @StringRes
+    private int mPositiveFeedbackText;
+
+    @DrawableRes
+    private int mPositiveFeedbackIcon;
+
+    @StringRes
+    private int mNegativeFeedbackText;
+
+    @DrawableRes
+    private int mNegativeFeedbackIcon;
+
+    @StringRes
+    private int mAmbiguityFeedbackText;
+
+    @DrawableRes
+    private int mAmbiguityFeedbackIcon;
+   
     private ShapeElement roundIconBackground;
     private ShapeElement feedBackground;
+	
     private ComponentContainer rootContainer;
+	
     private CommonDialog mDialog;
+	
     private Font.Builder mTypeFace;
     private PixelMap srcPixelMap;
     private Texture mIconTexture;
@@ -282,7 +319,7 @@ public class FeedBackDialog {
         return mIcon;
     }
 
-    public FeedBackDialog setIcon(int mIcon) {
+    public FeedBackDialog setIcon(@DrawableRes int mIcon) {
         this.mIcon =  mIcon;
         return this;
     }
@@ -291,7 +328,7 @@ public class FeedBackDialog {
         return mTitle;
     }
 
-    public FeedBackDialog setTitle(int mTitle) {
+    public FeedBackDialog setTitle(@StringRes int mTitle) {
         this.mTitle = mTitle;
         return this;
     }
@@ -300,7 +337,7 @@ public class FeedBackDialog {
         return mDescription;
     }
 
-    public FeedBackDialog setDescription(int mDescription) {
+    public FeedBackDialog setDescription(@StringRes int mDescription) {
         this.mDescription = mDescription;
         return this;
     }
@@ -309,7 +346,7 @@ public class FeedBackDialog {
         return mPositiveFeedbackText;
     }
 
-    public FeedBackDialog setPositiveFeedbackText(int mPositiveFeedbackText) {
+    public FeedBackDialog setPositiveFeedbackText(@StringRes int mPositiveFeedbackText) {
         this.mPositiveFeedbackText = mPositiveFeedbackText;
         return this;
     }
@@ -318,7 +355,7 @@ public class FeedBackDialog {
         return mPositiveFeedbackIcon;
     }
 
-    public FeedBackDialog setPositiveFeedbackIcon(int mPositiveFeedbackIcon) {
+    public FeedBackDialog setPositiveFeedbackIcon(@DrawableRes int mPositiveFeedbackIcon) {
         this.mPositiveFeedbackIcon = mPositiveFeedbackIcon;
         return this;
     }
@@ -327,7 +364,7 @@ public class FeedBackDialog {
         return mNegativeFeedbackText;
     }
 
-    public FeedBackDialog setNegativeFeedbackText(int mNegativeFeedbackText) {
+    public FeedBackDialog setNegativeFeedbackText(@StringRes int mNegativeFeedbackText) {
         this.mNegativeFeedbackText = mNegativeFeedbackText;
         return this;
     }
@@ -336,7 +373,7 @@ public class FeedBackDialog {
         return mNegativeFeedbackIcon;
     }
 
-    public FeedBackDialog setNegativeFeedbackIcon(int mNegativeFeedbackIcon) {
+    public FeedBackDialog setNegativeFeedbackIcon(@DrawableRes int mNegativeFeedbackIcon) {
         this.mNegativeFeedbackIcon = mNegativeFeedbackIcon;
         return this;
     }
@@ -345,7 +382,7 @@ public class FeedBackDialog {
         return mAmbiguityFeedbackText;
     }
 
-    public FeedBackDialog setAmbiguityFeedbackText(int mAmbiguityFeedbackText) {
+    public FeedBackDialog setAmbiguityFeedbackText(@StringRes int mAmbiguityFeedbackText) {
         this.mAmbiguityFeedbackText = mAmbiguityFeedbackText;
         return this;
     }
@@ -354,7 +391,7 @@ public class FeedBackDialog {
         return mAmbiguityFeedbackIcon;
     }
 
-    public FeedBackDialog setAmbiguityFeedbackIcon(int mAmbiguityFeedbackIcon) {
+    public FeedBackDialog setAmbiguityFeedbackIcon(@DrawableRes int mAmbiguityFeedbackIcon) {
         this.mAmbiguityFeedbackIcon = mAmbiguityFeedbackIcon;
         return this;
     }
@@ -363,7 +400,7 @@ public class FeedBackDialog {
         return mBackgroundColor;
     }
 
-    public FeedBackDialog setBackgroundColor(int mBackgroundColor) {
+    public FeedBackDialog setBackgroundColor(@ColorRes int mBackgroundColor) {
         this.mBackgroundColor = mBackgroundColor;
         return this;
     }
@@ -372,7 +409,7 @@ public class FeedBackDialog {
         return mIconColor;
     }
 
-    public FeedBackDialog setIconColor(int mIconColor) {
+    public FeedBackDialog setIconColor(@ColorRes int mIconColor) {
         this.mIconColor = mIconColor;
         return this;
     }

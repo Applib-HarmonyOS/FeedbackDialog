@@ -49,7 +49,7 @@ Inspired from android library <https://github.com/shivasurya/FeedbackDialog>.
 
 As simple as AlertDialog API,
 ```java
-FeedBackDialog mDialog = new FeedBackDialog(MainAbilitySlice.this)
+FeedBackDialog feedBackDialog = new FeedBackDialog(MainAbilitySlice.this)
     .setBackgroundColor(ResourceTable.Color_sampleColor)
     .setIcon(ResourceTable.Media_reviewdialog_ic_restaurant)
     .setIconColor(ResourceTable.Color_sampleColor)
@@ -90,17 +90,17 @@ FeedBackDialog mDialog = new FeedBackDialog(MainAbilitySlice.this)
 
 You can check below some of the exposed API methods to control the Dialog appearance and actions.                
 
-1. ```setIcon(int mIcon)``` - set Media Image at top of the Dialog as Icon. <br />
-2. ```setTitle(int mTitle)``` -  set Title or Brand Name for the Feedback Dialog
-3. ```setDescription(int mDescription)``` - set Description or Additional text for Feedback Dialog
-4. ```setPositiveFeedbackText(int mPositiveFeedbackText)``` - set Positive Feedback button text
-5. ```setNegativeFeedbackText(int mNegativeFeedbackText)``` - set Negative Feedback button text
-6. ```setAmbiguityFeedbackText(int mAmbiguityFeedbackText``` - set Ambiguity Feedback button text
-7. ```setPositiveFeedbackIcon(int mPositiveFeedbackIcon)``` - set Positive Feedback button Icon as element resource
-8. ```setNegativeFeedbackIcon(int mNegativeFeedbackIcon)``` - set Negative Feedback button Icon as element resource
-9. ```setAmbiguityFeedbackIcon(int mAmbiguityFeedbackIcon)``` - set Ambiguity Feedback button Icon as element resource
-10. ```setBackgroundColor(int mBackgroundColor)``` - set Feedback Dialog background color
-11. ```setIconColor(int mIconColor)``` - set Title and Action Icon colors
+1. ```setIcon(@DrawableRes int mIcon)``` - set Media Image at top of the Dialog as Icon. <br />
+2. ```setTitle(@StringRes int mTitle)``` -  set Title or Brand Name for the Feedback Dialog
+3. ```setDescription(@StringRes int mDescription)``` - set Description or Additional text for Feedback Dialog
+4. ```setPositiveFeedbackText(@StringRes int mPositiveFeedbackText)``` - set Positive Feedback button text
+5. ```setNegativeFeedbackText(@StringRes int mNegativeFeedbackText)``` - set Negative Feedback button text
+6. ```setAmbiguityFeedbackText(@StringRes int mAmbiguityFeedbackText``` - set Ambiguity Feedback button text
+7. ```setPositiveFeedbackIcon(@DrawableRes int mPositiveFeedbackIcon)``` - set Positive Feedback button Icon as element resource
+8. ```setNegativeFeedbackIcon(@DrawableRes int mNegativeFeedbackIcon)``` - set Negative Feedback button Icon as element resource
+9. ```setAmbiguityFeedbackIcon(@DrawableRes int mAmbiguityFeedbackIcon)``` - set Ambiguity Feedback button Icon as element resource
+10. ```setBackgroundColor(@ColorRes int mBackgroundColor)``` - set Feedback Dialog background color
+11. ```setIconColor(@ColorRes int mIconColor)``` - set Title and Action Icon colors
 12. ```setReviewQuestion(int mReviewQuestion)``` - set Questionable message to end-user which is shown in Dialog
 13. ```setOnReviewClickListener(FeedBackActionsListeners reviewActionsListeners)``` - set Feedback Action listeners which implements action listeners callback.
 14. ```destroy()``` - destroy the active Feedback Dialog

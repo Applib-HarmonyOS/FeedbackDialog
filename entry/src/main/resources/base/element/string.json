@@ -35,6 +35,42 @@
     {
       "name": "ambiguity_feedback_text",
       "value": "HELP"
+    },
+    {
+      "name": "hotel_feedback_title",
+      "value": "Famous Hotels"
+    },
+    {
+      "name": "hotel_feedback_description",
+      "value": "Opposite Mattuthavani Bus Stand, Madurai"
+    },
+    {
+      "name": "hotel_feedback_review_questions",
+      "value": "Are reservations required here?"
+    },
+    {
+      "name": "software_feedback_title",
+      "value": "Sample Software"
+    },
+    {
+      "name": "software_feedback_description",
+      "value": "Your urgent query on importing customers to our software"
+    },
+    {
+      "name": "software_feedback_review_questions",
+      "value": "Does our solution solved your problem?"
+    },
+    {
+      "name": "app_feedback_title",
+      "value": "Rate our Application"
+    },
+    {
+      "name": "app_feedback_description",
+      "value": "Looks like you've tried our application for long time"
+    },
+    {
+      "name": "app_feedback_review_questions",
+      "value": "How useful our application was?"
     }
   ]
 }

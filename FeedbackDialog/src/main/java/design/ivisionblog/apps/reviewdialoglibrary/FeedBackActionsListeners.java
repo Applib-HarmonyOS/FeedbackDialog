@@ -1,7 +1,5 @@
 package design.ivisionblog.apps.reviewdialoglibrary;
 
-import ohos.agp.window.dialog.BaseDialog;
-import ohos.agp.window.dialog.CommonDialog;
 import ohos.agp.window.dialog.IDialog;
 
 public interface FeedBackActionsListeners
