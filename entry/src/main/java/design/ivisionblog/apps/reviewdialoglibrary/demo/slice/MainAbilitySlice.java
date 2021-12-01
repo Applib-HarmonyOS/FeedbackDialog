@@ -18,7 +18,6 @@ package design.ivisionblog.apps.reviewdialoglibrary.demo.slice;
 import design.ivisionblog.apps.reviewdialoglibrary.FeedBackActionsListeners;
 import design.ivisionblog.apps.reviewdialoglibrary.FeedBackDialog;
 import design.ivisionblog.apps.reviewdialoglibrary.demo.ResourceTable;
-import design.ivisionblog.apps.reviewdialoglibrary.utils.LogUtil;
 
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
@@ -31,6 +30,7 @@ import ohos.agp.window.dialog.IDialog;
 
 public class MainAbilitySlice extends AbilitySlice implements Component.ClickedListener {
     private static final String TAG = "MainAbilitySlice";
+
     private Button mTravelFeedBackBtn;
     private Button mHotelFeedBackBtn;
     private Button mSoftwareFeedBackBtn;

@@ -7,7 +7,7 @@ apply plugin: "org.sonarqube"
 ohos {
     compileSdkVersion 5
     defaultConfig {
-        compatibleSdkVersion 5
+        compatibleSdkVersion 4
     }
 }
 

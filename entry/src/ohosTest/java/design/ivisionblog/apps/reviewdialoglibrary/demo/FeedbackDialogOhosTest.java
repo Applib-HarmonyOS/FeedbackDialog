@@ -255,7 +255,6 @@ public class FeedbackDialogOhosTest {
         }
         catch (final Exception exception)
         {
-            exception.printStackTrace();
             return null;
         }
     }
