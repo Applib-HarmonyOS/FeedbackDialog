@@ -32,17 +32,25 @@ Inspired from android library <https://github.com/shivasurya/FeedbackDialog>.
 1.For using FeedbackDialog module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/FeedbackDialog.har.
 
 ```
-   dependencies {
-       implementation project(':FeedbackDialog')
-   }
+    dependencies {
+        implementation project(':FeedbackDialog')
+    }
 ```
 
 2.For using FeedbackDialog in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
 
 ```
-   dependencies {
-      implementation fileTree(dir: 'libs', include: ['*.har'])     
-   }
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.har'])     
+    }
+```
+
+3.For using FeedbackDialog module from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+
+```
+    dependencies {
+        implementation 'dev.applibgroup:FeedbackDialog:1.0.0'
+    }
 ```
 
 ## Usage
@@ -106,19 +114,4 @@ You can check below some of the exposed API methods to control the Dialog appear
 14. ```destroy()``` - destroy the active Feedback Dialog
     
 ## License
-
-```
-Copyright 2015 the original author or authors.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-https://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.    
-```
+[Apache-2.0](https://github.com/applibgroup/FeedbackDialog/blob/master/LICENSE)
