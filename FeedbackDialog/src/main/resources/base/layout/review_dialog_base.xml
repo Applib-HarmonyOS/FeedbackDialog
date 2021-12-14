@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:orientation="vertical"
+    ohos:width="match_parent"
+    ohos:height="match_content">
+
+    <DependentLayout
+        ohos:width="match_parent"
+        ohos:height="match_content">
+
+        <DependentLayout
+            ohos:id="$+id:semi_trans"
+            ohos:background_element="$color:dialogTransparent"
+            ohos:width="match_parent"
+            ohos:height="25vp">
+
+        </DependentLayout>
+
+        <DependentLayout
+            ohos:below="$+id:semi_trans"
+            ohos:id="$+id:dialog_body"
+            ohos:width="match_parent"
+            ohos:height="match_content">
+
+            <DirectionalLayout
+                ohos:id="$+id:feedback_body_layout"
+                ohos:orientation="vertical"
+                ohos:padding="5vp"
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:min_height="125vp">
+
+                <Text
+                    ohos:id="$+id:review_title"
+                    ohos:text_alignment="center"
+                    ohos:layout_alignment="center"
+                    ohos:text_size="14fp"
+                    ohos:text_color="$color:primary_text_light"
+                    ohos:truncation_mode="auto_scrolling"
+                    ohos:max_text_lines="1"
+                    ohos:top_margin="30vp"
+                    ohos:width="match_parent"
+                    ohos:height="match_content" />
+
+                <Text
+                    ohos:text_alignment="center"
+                    ohos:layout_alignment="center"
+                    ohos:text_size="12fp"
+                    ohos:top_margin="5vp"
+                    ohos:text_color="$color:primary_text_light"
+                    ohos:id="$+id:review_description"
+                    ohos:max_text_lines="1"
+                    ohos:truncation_mode="auto_scrolling"
+                    ohos:text="171, Straight Road, Cross Street"
+                    ohos:width="match_parent"
+                    ohos:height="match_content" />
+
+                <Text
+                    ohos:text_alignment="center"
+                    ohos:layout_alignment="center"
+                    ohos:text_size="18fp"
+                    ohos:text_color="#FFF"
+                    ohos:top_margin="5vp"
+                    ohos:id="$+id:review_questions"
+                    ohos:text="Are reservations required here?"
+                    ohos:width="match_parent"
+                    ohos:height="match_content" />
+
+            </DirectionalLayout>
+        </DependentLayout>
+
+        <Image
+            ohos:id="$+id:review_icon"
+            ohos:width="50vp"
+            ohos:height="50vp"
+            ohos:min_height="5vp"
+            ohos:horizontal_center="true"
+            ohos:clip_alignment="center"
+            ohos:bottom_margin="-20vp"
+            ohos:background_element="$graphic:reviewdialog_round_icon"
+            ohos:above="$+id:dialog_body" />
+
+    </DependentLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:dialog_action"
+        ohos:orientation="horizontal"
+        ohos:width="match_parent"
+        ohos:height="100vp"
+        ohos:total_weight="3"
+        ohos:background_element="#FFF">
+
+        <DirectionalLayout
+            ohos:id="$+id:postive_feedback_layout"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:orientation="vertical"
+            ohos:padding="20vp"
+            ohos:clickable="true"
+            ohos:focusable="focus_enable"
+            ohos:height="match_parent">
+
+            <Image
+                ohos:id="$+id:postive_feedback_icon"
+                ohos:width="32vp"
+                ohos:height="32vp"
+                ohos:background_element="$color:transparent"
+                ohos:layout_alignment="horizontal_center"
+                ohos:image_src="$media:reviewdialog_ic_accept_action"/>
+
+            <Text
+                ohos:id="$+id:positive_feedback_text"
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:text="YES"
+                ohos:max_text_lines="1"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:text_alignment="center"
+                ohos:layout_alignment="center"
+                ohos:text_color="#000"
+                ohos:top_margin="5vp"/>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:negative_feedback_layout"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:orientation="vertical"
+            ohos:padding="20vp"
+            ohos:clickable="true"
+            ohos:focusable="focus_enable"
+            ohos:height="match_parent">
+
+            <Image
+                ohos:id="$+id:negative_feedback_icon"
+                ohos:width="32vp"
+                ohos:height="32vp"
+                ohos:background_element="$color:transparent"
+                ohos:layout_alignment="horizontal_center"
+                ohos:image_src="$media:reviewdialog_ic_cancel_action"/>
+
+            <Text
+                ohos:id="$+id:negative_feedback_text"
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:text="NO"
+                ohos:max_text_lines="1"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:text_alignment="center"
+                ohos:layout_alignment="center"
+                ohos:text_color="#000"
+                ohos:top_margin="5vp"/>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:ambiguity_feedback_layout"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:orientation="vertical"
+            ohos:padding="20vp"
+            ohos:clickable="true"
+            ohos:focusable="focus_enable"
+            ohos:height="match_parent">
+
+            <Image
+                ohos:id="$+id:ambiguity_feedback_icon"
+                ohos:width="32vp"
+                ohos:height="32vp"
+                ohos:background_element="$color:transparent"
+                ohos:layout_alignment="horizontal_center"
+                ohos:image_src="$media:reviewdialog_ic_ambiguity_action"/>
+
+            <Text
+                ohos:id="$+id:ambiguity_feedback_text"
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:text="NOT SURE"
+                ohos:max_text_lines="1"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:text_alignment="center"
+                ohos:layout_alignment="center"
+                ohos:text_color="#000"
+                ohos:top_margin="5vp"/>
+
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

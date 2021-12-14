@@ -1,0 +1,44 @@
+{
+  "color" : [
+    {
+      "name":"md_btn_selected_dark",
+      "value":"#808080"
+    },
+    {
+      "name":"grey",
+      "value":"#E7E7E7"
+    },
+    {
+      "name":"colorPrimary",
+      "value":"#3F51B5"
+    },
+    {
+      "name":"colorPrimaryDark",
+      "value":"#303F9F"
+    },
+    {
+      "name":"colorAccent",
+      "value":"#FF4081"
+    },
+    {
+      "name":"sampleColor",
+      "value":"#795548"
+    },
+    {
+      "name":"sampleColor2",
+      "value":"#B224E6"
+    },
+    {
+      "name":"sampleColor3",
+      "value":"#3F51B5"
+    },
+    {
+      "name":"sampleColor4",
+      "value":"#0B9F8A"
+    },
+    {
+      "name":"transparent",
+      "value":"#00000000"
+    }
+  ]
+}

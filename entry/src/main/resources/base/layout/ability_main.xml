@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Button
+        ohos:id="$+id:travelFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Travel Feedback Dialog" />
+
+    <Button
+        ohos:id="$+id:hotelFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Hotel Feedback Dialog" />
+
+    <Button
+        ohos:id="$+id:softwareFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Software Feedback Dialog" />
+
+    <Button
+        ohos:id="$+id:appFeedBackButton"
+        ohos:width="200vp"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="center"
+        ohos:height="50vp"
+        ohos:text="Application Feedback Dialog" />
+
+</DirectionalLayout>
